@@ -1,15 +1,19 @@
 <template lang="pug">
 #app
   Navbar
-  router-view
+  router-view  
+  .bottom-content.text-center.mt-5
+    BottomTag
 </template>
 
 <script>
 import Navbar from '@/components/Navbar.vue';
+import BottomTag from '@/components/BottomTag.vue';
 
 export default {
   components: {
-    Navbar
+    Navbar,
+    BottomTag
   }
 };
 </script>
@@ -29,18 +33,5 @@ export default {
   font-family: 'Source Sans Pro';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-#nav {
-  padding: 30px;
-}
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
 }
 </style>
