@@ -2,7 +2,7 @@
 #app
   Navbar
   router-view  
-  .bottom-content.text-center.mt-5
+  .bottom-content.text-center.my-5
     BottomTag
 </template>
 
@@ -33,5 +33,28 @@ export default {
   font-family: 'Source Sans Pro';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.text-custom-primary {
+  color: #0050fd;
+}
+
+.custom-dimension-badge {
+  padding: 10px 20px !important;
+  font-size: 15px !important;
+}
+
+.custom-badge-pills-radius {
+  border-radius: 20px !important;
+}
+
+.home-custom-badge-primary {
+  background-color: #0050fd;
+  color: white;
+}
+
+.custom-badge-primary {
+  background-color: #e6dace !important;
+  color: black !important;
 }
 </style>

@@ -5,11 +5,13 @@ b-card.text-center
     hr.separator.my-4
     span.font-weight-bold.job.d-block.mb-5 WEB DEVELOPER
     .custom-card-footer.bg-white
-        a(href="#")
+        a(href="https://github.com/davidmahbubi" target="blank")
             i.fab.fa-github
-        a(href="#")
+        a(href="https://davidmahbubi.my.id" target="blank")
+            i.fas.fa-globe
+        a(href="https://www.linkedin.com/in/david-mahbubi-2702b1190/" target="blank")
             i.fab.fa-linkedin-in
-        a(href="#")
+        a(href="https://www.instagram.com/david_mhb.id/" target="blank")
             i.fab.fa-instagram
 </template>
 
@@ -20,7 +22,8 @@ b-card.text-center
 
 .photo {
   margin: 0 65px;
-  width: 200px;
+  max-width: 200px;
+  width: 100%;
 }
 
 .card {
@@ -58,5 +61,20 @@ b-card.text-center
 
 .custom-card-footer a:hover {
   transform: scale(1.2);
+}
+
+@media (max-width: 767px) {
+  .card {
+    width: 100%;
+    margin-right: 0;
+    box-shadow: none;
+  }
+
+  .custom-card-footer {
+    box-shadow: -5px 0 100px rgba(0, 0, 0, 0.2);
+    display: inline-block;
+    border-radius: 50px;
+    padding: 10px 20px;
+  }
 }
 </style>
