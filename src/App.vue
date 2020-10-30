@@ -36,7 +36,7 @@ export default {
 }
 
 .text-custom-primary {
-  color: #0050fd;
+  color: #8675a9;
 }
 
 .custom-dimension-badge {
@@ -49,12 +49,12 @@ export default {
 }
 
 .home-custom-badge-primary {
-  background-color: #0050fd;
+  background-color: #8675a9 !important;
   color: white;
 }
 
 .custom-badge-primary {
-  background-color: #e6dace !important;
+  background-color: #efbbcf !important;
   color: black !important;
 }
 </style>

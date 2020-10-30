@@ -30,7 +30,7 @@ b-card.text-center
   border: none;
   border-radius: 0;
   margin: 60px 0;
-  background-color: #e6dace;
+  background-color: #efbbcf;
   box-shadow: -5px 0 100px rgba(0, 0, 0, 0.2);
   display: inline-block;
   margin-right: -120px;
@@ -41,7 +41,7 @@ b-card.text-center
   max-width: 50px;
   border-width: 2px;
   border-radius: 10px;
-  background-color: #003dc2;
+  background-color: #8675a9;
 }
 
 .job {

@@ -8,6 +8,6 @@
             b-collapse#nav-collapse(is-nav)            
                 b-navbar-nav.ml-auto.font-weight-bold
                     b-nav-item(href="#") Home
-                    b-nav-item(href="#") About
+                    b-nav-item(href="#") Proyek
                     b-nav-item(href="#") Contact
 </template>
