@@ -5,7 +5,7 @@
                 h3.font-weight-bold.certificate-title {{ certificate.title }}
                 span Verifikasi 
                     a(:href="certificate.verificationLink" target="blank") disini 
-            img.img-thumbnail(:src="certificate.path" style="object-fit: cover" height="200")
+            img.img-thumbnail.certificate-image(:src="certificate.path" style="object-fit: cover" height="200")
 </template>
 
 <script>
@@ -34,5 +34,15 @@ export default {
 <style scoped>
 .certificate-title {
   text-transform: uppercase !important;
+}
+
+.certificate-image {
+  transition: 0.2s;
+}
+
+.certificate-image:hover {
+  transform: scale(1.5);
+  z-index: 99;
+  position: relative;
 }
 </style>
