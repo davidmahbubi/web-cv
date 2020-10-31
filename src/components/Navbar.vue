@@ -12,7 +12,7 @@
                     b-nav-item
                         router-link(:to="{name: 'ProjectStorefront'}") Proyek
                     b-nav-item
-                        router-link(:to="{name: 'Home'}") Contact
+                        router-link(:to="{path: '/#'}") Contact
 </template>
 
 <style scoped>
@@ -20,5 +20,11 @@
   text-decoration: none;
   color: gray;
   font-weight: 600;
+}
+
+.router-link-exact-active {
+  color: #8675a9 !important;
+  border-bottom: 2px solid #8675a9;
+  padding-bottom: 8px;
 }
 </style>
