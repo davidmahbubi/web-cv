@@ -19,7 +19,7 @@ b-row
                 td :
                 td Ngoding
     b-col(:md="4")
-        img.img-thumbnail(src="./../assets/img/david-with-laptop.jpg" width="300")
+        img.img-thumbnail(src="/img/david-with-laptop.jpg" width="300")
 </template>
 
 <style scoped>
