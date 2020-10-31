@@ -1,7 +1,9 @@
 <template lang="pug">
 #app
   Navbar
-  router-view  
+  transition(name="fade" mode="out-in")
+    keep-alive
+      router-view
   .bottom-content.text-center.my-5
     BottomTag
 </template>
@@ -56,5 +58,14 @@ export default {
 .custom-badge-primary {
   background-color: #efbbcf !important;
   color: black !important;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.2s;
+}
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
 }
 </style>

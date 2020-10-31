@@ -1,5 +1,6 @@
 <template lang="pug">
-  .home
+  .home.get-title(data-title="David Mahbubi | Freelance Fullstack Web Developer")
+    vue-headful(title="David Mahbubi | Freelance Fullstack Web Developer - Official Site")
     b-row
       b-col.main-bg-primary.left-card(:xl="6" :lg="5" :md="4")
         MainCard
@@ -8,7 +9,7 @@
         h5.mt-3.mb-5.font-weight-bold Ingin kepoin lebih banyak ?
         .custom-button-group
           a.btn.btn-custom-primary.mr-2.btn-primary-rounded.btn-dimension-primary Kontak Saya
-          a.btn.btn-custom-outline-primary.mr-2.btn-primary-rounded.btn-dimension-primary Etalase Proyek
+          router-link.btn.btn-custom-outline-primary.mr-2.btn-primary-rounded.btn-dimension-primary(:to="{name: 'ProjectStorefront'}") Etalase Proyek
         .paragraph-content
           p Halo, Saya David Mahbubi. Seorang mahasiswa Program Studi D3 Teknik Informatika di Politeknik Negeri Banyuwangi.
           p Saya adalah seorang Freelance Fullstack Web Developer. Bidang ini telah saya tekuni selama kurang lebih 2 tahun.
