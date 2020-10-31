@@ -3,10 +3,8 @@ name: Deployed to GCloud VPS
 runs-on: ubuntu-latest
 #2. This is the OS to which the commands will be run against; best is to use similar OS type to your production server. Or use ubuntu-latest if you using any of the cloud based environments
 on:[push]
-#3. This is the trigger of the workflow. In our case the workflow is triggered when a push occurs but other options include pull_request, merge e.t.c basically any of the Github Actions (Hence the name). You can set up several in one page too but it best practice to have one per workflow file. You can use on: [push, pull_request] to have the workflow triggered by several actions.
-       
-       branches:
-          - main
+  branches:
+    - main
 #4. This is the branch which triggers the workflow and to which the rest of the commands happen.
 jobs:
   deploy-to-gcloud:
