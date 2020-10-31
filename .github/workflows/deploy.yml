@@ -1,26 +1,21 @@
-name: Deployed to GCloud VPS
-#1. This is the name you want to give to the action. This name is displayed on your Github Repo under actions. Give it a name that make sense to you and your team.
-runs-on: ubuntu-latest
-#2. This is the OS to which the commands will be run against; best is to use similar OS type to your production server. Or use ubuntu-latest if you using any of the cloud based environments
-on:[push]
-  branches:
-    - main
-#4. This is the branch which triggers the workflow and to which the rest of the commands happen.
+name: DEPLOY TO STAGING
+
+on:
+  push:
+    branches:
+      - develop
+
 jobs:
-  deploy-to-gcloud:
-  #5. This is the job that we would like to perform; see Github Actions documentation for many more types.
+  firebase-deploy:
     runs-on: ubuntu-latest
-      #5. This is the OS of the virtual machine to which your code will be deployed against. It's best to use similar OS as the production server. If you using any of the cloud environments (most likely are linux based) then use ubuntu-latest. 
-      steps:
-        - uses: actions/checkout@master
-#6. Always have this line; It contains the run instructions for the below steps
-        - uses: actions/setup-node@master
-#7. The above line will set up NodeJS (the latest version ) because we are deploying a VueJS project. 
-        - run: npm install
-#8 At this point, Github Action has spun out a Ubuntu Virtual Machine, installed all its dependencies plus Node in above line and the above line installs all the dependencies of your projects
-        - run: npm run build
-#9 Runs the build for the project; creating a /dist folder at the root with is uploaded to Firebase
-        - uses: appleboy/scp-action@master
+    steps:
+      - uses: actions/checkout@master
+      - uses: actions/setup-node@master
+      - name: Installing project dependencies
+      - run: npm install
+      - name: Building the project
+      - run: npm run build
+      - uses: appleboy/scp-action
           with:
             host: ${{ secrets.HOST}}
             username: ${{ secrets.USERNAME }}
