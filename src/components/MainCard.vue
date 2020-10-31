@@ -1,6 +1,6 @@
 <template lang="pug">
 b-card.text-center
-    img.photo.rounded-circle.my-4(src="/img/david.png")
+    img.photo.rounded-circle.my-4(src="/img/david.jpg")
     h4.font-weight-bold.mt-3 David Mahbubi
     hr.separator.my-4
     span.font-weight-bold.job.d-block.mb-5 WEB DEVELOPER
