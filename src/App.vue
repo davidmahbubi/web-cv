@@ -26,7 +26,7 @@ export default {
 
 @font-face {
   font-family: 'Source Sans Pro';
-  src: url('/fonts/SourceSansPro-Regular.otf');
+  src: url('/fonts/SourceSansPro-Regular.woff');
 }
 
 #app {
