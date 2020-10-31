@@ -2,25 +2,29 @@
 b-row
     b-col.mb-5(:md="8" )
         table.biodata.text-left(cellpadding="7")
-            tr
-                td Nama Lengkap
+            tr(v-for="(value, profile) in profiles" :key="profile")
+                td {{ profile }}
                 td :
-                td David Mahbubi
-            tr
-                td Tempat / Tanggal Lahir
-                td :
-                td Banyuwangi, 03 Maret 2002
-            tr
-                td Alamat
-                td :
-                td Sidorejo Kulon, Yosomulyo, Gambiran, Banyuwangi 68486
-            tr
-                td Hobi
-                td :
-                td Ngoding
+                td {{ value }}
     b-col(:md="4")
-        img.img-thumbnail(src="/img/david-with-laptop.jpg" width="300")
+        img.img-thumbnail(:src="sideImagePath" width="300")
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      profiles: {
+        'Nama Lengkap': 'David Mahbubi',
+        'Tempat / Tanggal Lahir': 'Banyuwangi, 03 Maret 2002',
+        Alamat: 'Sidorejo Kulon, Yosomulyo, Gambiran, Banyuwangi 68486',
+        Hobi: 'Ngoding'
+      },
+      sideImagePath: '/img/david-with-laptop.jpg'
+    };
+  }
+};
+</script>
 
 <style scoped>
 .biodata tr td {
