@@ -12,6 +12,7 @@ b-row
 
 <script>
 export default {
+  name: 'MainProfile',
   data() {
     return {
       profiles: {

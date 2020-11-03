@@ -10,6 +10,7 @@
 
 <script>
 export default {
+  name: 'MainEducation',
   data() {
     return {
       educations: [
@@ -52,7 +53,8 @@ export default {
 }
 
 .timeline-item {
-  background-color: #efbbcf;
+  background-color: #3185fc;
+  color: white;
   border: none;
 }
 </style>

@@ -4,3 +4,9 @@ b-badge.custom-badge-primary.custom-dimension-badge.shadow-sm(pill)
     span.text-danger &hearts; 
     |by David Mahbubi
 </template>
+
+<script>
+export default {
+  name: 'BottomTag'
+};
+</script>

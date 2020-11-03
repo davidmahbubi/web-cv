@@ -1,7 +1,7 @@
 <template lang="pug">
     b-navbar.py-4.bg-white(toggleable="lg" type="light" sticky)
         b-container
-            b-navbar-brand.font-weight-bold(href="#")
+            b-navbar-brand.font-weight-bold(href="/")
                 span.text-custom-primary David 
                 | Mahbubi
             b-navbar-toggle(target="nav-collapse")
@@ -15,6 +15,12 @@
                         router-link(:to="{path: '/#'}") Contact
 </template>
 
+<script>
+export default {
+  name: 'Navbar'
+};
+</script>
+
 <style scoped>
 .nav-item a {
   text-decoration: none;
@@ -23,8 +29,8 @@
 }
 
 .router-link-exact-active {
-  color: #8675a9 !important;
-  border-bottom: 2px solid #8675a9;
+  color: #e84855 !important;
+  border-bottom: 2px solid #e84855;
   padding-bottom: 8px;
 }
 </style>

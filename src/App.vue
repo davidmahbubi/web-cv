@@ -21,6 +21,8 @@ export default {
 </script>
 
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
 .row {
   margin-left: 0 !important;
   margin-right: 0 !important;
@@ -32,13 +34,13 @@ export default {
 }
 
 #app {
-  font-family: 'Source Sans Pro';
+  font-family: 'Nunito';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 .text-custom-primary {
-  color: #8675a9;
+  color: #e84855;
 }
 
 .custom-dimension-badge {
@@ -51,13 +53,13 @@ export default {
 }
 
 .home-custom-badge-primary {
-  background-color: #8675a9 !important;
+  background-color: e84855 !important;
   color: white;
 }
 
 .custom-badge-primary {
-  background-color: #efbbcf !important;
-  color: black !important;
+  background-color: #3185fc !important;
+  color: white !important;
 }
 
 .fade-enter-active,
@@ -67,5 +69,37 @@ export default {
 .fade-enter,
 .fade-leave-to {
   opacity: 0;
+}
+
+.btn-custom-primary {
+  border-width: 2.5px !important;
+  color: white !important;
+  background-color: #e84855 !important;
+}
+
+.btn-custom-primary:hover {
+  background-color: #ad3842 !important;
+  color: white !important;
+}
+
+.btn-primary-rounded {
+  border-radius: 20px !important;
+}
+
+.btn-dimension-primary {
+  padding: 5px 30px !important;
+  font-weight: bold !important;
+}
+
+.btn-custom-outline-primary {
+  border-color: black !important;
+  color: black !important;
+  border-width: 2.5px !important;
+}
+
+.btn-custom-outline-primary:hover {
+  background-color: black !important;
+  color: white !important;
+  border-color: black !important;
 }
 </style>

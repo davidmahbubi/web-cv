@@ -10,6 +10,7 @@
 
 <script>
 export default {
+  name: 'MainCertificate',
   data() {
     return {
       certificates: [
