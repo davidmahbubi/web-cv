@@ -2,7 +2,7 @@
     .project-card.shadow.p-3
         img.project-image.img-thumbnail.mt-2(:src="image")
         h5.my-4.font-weight-bold {{ title }}
-        p.mx-2 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        p.mx-2 {{ content || 'Tidak ada deskripsi' }}
         .stacks
             span.custom-badge(v-for="(stack, index) in stacks" :key="index") {{ stack }}
         a(:href="linkLeft" target="blank" v-if="linkLeft") Demo | 
