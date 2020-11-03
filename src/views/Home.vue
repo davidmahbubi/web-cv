@@ -26,7 +26,7 @@
         svg.flying-item(viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" width="250" style="left: 350px; top: 167px")
             path(fill="#3185fc" d="M22.9,-26.7C26.7,-19.1,24.7,-9.6,24.3,-0.4C24,8.8,25.3,17.7,21.5,29.3C17.7,40.9,8.8,55.2,-0.2,55.4C-9.2,55.5,-18.4,41.5,-33.7,30C-49.1,18.4,-70.7,9.2,-68.7,1.9C-66.8,-5.3,-41.4,-10.6,-26,-18.2C-10.6,-25.8,-5.3,-35.6,2.1,-37.7C9.6,-39.9,19.1,-34.3,22.9,-26.7Z" transform="translate(100 100)")
         b-container
-          b-tabs(content-class="mt-5" align="center" v-model="tabIndex" pills)
+          b-tabs.card.py-5.py-md-4.px-3.px-md-5.shadow(content-class="mt-5" align="center" v-model="tabIndex" pills)
             b-tab(:title-link-class="tabClass(0)" active)
               template(v-slot:title)
                 i.fas.fa-user
