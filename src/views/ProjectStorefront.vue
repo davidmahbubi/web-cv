@@ -30,7 +30,8 @@ export default {
         {
           image: '/img/projects/florist.png',
           title: 'POS Toko Bunga',
-          description: '',
+          description:
+            'Proyek Toko Bunga (Client: Ikebana Florist Makassar), web berbasis POS (Point of Sale) lengkap dengan fitur kasir dan print di frontend',
           demo: '',
           github: '',
           stacks: ['PHP', 'JavaScript', 'Laravel', 'MySQL']
@@ -38,7 +39,8 @@ export default {
         {
           image: '/img/projects/textile.png',
           title: 'POS Toko Kain',
-          description: '',
+          description:
+            'Proyek Toko Kain (Client: KK Textile Kupang), web berbasis POS (Point of Sale) lengkap dengan manajemen barang di gudang dan toko',
           demo: '',
           github: '',
           stacks: ['PHP', 'JavaScript', 'Laravel', 'MySQL']
@@ -46,7 +48,8 @@ export default {
         {
           image: '/img/projects/covid.png',
           title: 'Web Statistik Kasus COVID19',
-          description: '',
+          description:
+            'Open source project web berbasis SPA untuk melihat statistik kasus penyebaran Novel Corona Virus 2019, web menggunakan API dari mathdroid',
           demo: 'https://covid19.mhbproject.com/',
           github: 'https://github.com/davidmahbubi/covid19',
           stacks: ['JavaScript', 'Vue']
@@ -54,7 +57,8 @@ export default {
         {
           image: '/img/projects/kanji_quiz.jpg',
           title: 'Quiz Kanji',
-          description: '',
+          description:
+            'Aplikasi Quiz Kanji dengan basis Single Page Application, dikembangkan menggunakan VueJS untuk frontend nya, dan Laravel untuk Backend nya',
           demo: '',
           github: 'https://github.com/davidmahbubi/kanji_quiz_frontend',
           stacks: ['PHP', 'Laravel', 'MySQL', 'JavaScript', 'Vue']
