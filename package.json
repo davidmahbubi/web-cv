@@ -10,6 +10,7 @@
   "dependencies": {
     "bootstrap-vue": "^2.18.1",
     "core-js": "^3.6.5",
+    "mapbox-gl": "^1.12.0",
     "typed.js": "^2.0.11",
     "vue": "^2.6.11",
     "vue-headful": "^2.1.0",

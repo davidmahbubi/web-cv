@@ -7,17 +7,31 @@
             b-navbar-toggle(target="nav-collapse")
             b-collapse#nav-collapse(is-nav)            
                 b-navbar-nav.ml-auto.font-weight-bold
-                    b-nav-item
-                        router-link(:to="{name: 'Home'}") Home
-                    b-nav-item
-                        router-link(:to="{name: 'ProjectStorefront'}") Proyek
-                    b-nav-item
-                        router-link(:to="{path: '/#'}") Contact
+                    b-nav-item.mr-3(v-for="(link, index) in navLinks" :key="index")
+                        router-link(:to="{name: link.pathName}") {{ link.label }}
 </template>
 
 <script>
 export default {
-  name: 'Navbar'
+  name: 'Navbar',
+  data() {
+    return {
+      navLinks: [
+        {
+          label: 'Home',
+          pathName: 'Home'
+        },
+        {
+          label: 'Proyek',
+          pathName: 'ProjectStorefront'
+        },
+        {
+          label: 'Kontak',
+          pathName: 'Contact'
+        }
+      ]
+    };
+  }
 };
 </script>
 
@@ -30,7 +44,6 @@ export default {
 
 .router-link-exact-active {
   color: #e84855 !important;
-  border-bottom: 2px solid #e84855;
   padding-bottom: 8px;
 }
 </style>

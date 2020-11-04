@@ -17,6 +17,12 @@ const routes = [
       import(
         /* webpackChunkName: "ProjectStorefront" */ './../views/ProjectStorefront.vue'
       )
+  },
+  {
+    path: '/contact',
+    name: 'Contact',
+    component: () =>
+      import(/* webpackChunkName: "Contact" */ './../views/Contact.vue')
   }
 ];
 

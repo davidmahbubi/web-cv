@@ -43,6 +43,10 @@ export default {
   color: #e84855;
 }
 
+.text-custom-primary-alt {
+  color: #3185fc;
+}
+
 .custom-dimension-badge {
   padding: 10px 20px !important;
   font-size: 15px !important;

@@ -9,7 +9,7 @@
         a(:href="linkRight" target="blank" v-if="linkRight") GitHub
         span(v-if="!linkLeft && !linkRight")
             i.fas.fa-lock.mr-2
-            | Proyek Close Source
+            | Proyek Closed Source
 </template>
 
 <script>
