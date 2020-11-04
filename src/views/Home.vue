@@ -8,8 +8,8 @@
         h1.font-weight-bold.main-title Halo
         h5.mt-3.mb-5.font-weight-bold Ingin kepoin lebih banyak ?
         .custom-button-group
-          router-link.btn.btn-custom-primary.mr-2.btn-primary-rounded.btn-dimension-primary(:to="{name: 'Contact'}") Kontak Saya
-          router-link.btn.btn-custom-outline-primary.mr-2.btn-primary-rounded.btn-dimension-primary(:to="{name: 'ProjectStorefront'}") Etalase Proyek
+          router-link.btn.btn-custom-primary.mr-2.btn-primary-rounded.btn-dimension-primary.mb-2.d-inline-block(:to="{name: 'Contact'}") Kontak Saya
+          router-link.btn.btn-custom-outline-primary.mr-2.btn-primary-rounded.btn-dimension-primary.mb-2.d-inline-block(:to="{name: 'ProjectStorefront'}") Etalase Proyek
         .paragraph-content
           p Halo, Saya David Mahbubi. Seorang mahasiswa Program Studi D3 Teknik Informatika di Politeknik Negeri Banyuwangi.
           p Saya adalah seorang Freelance Fullstack Web Developer. Bidang ini telah saya tekuni selama kurang lebih 2 tahun.
