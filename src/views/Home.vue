@@ -115,7 +115,7 @@ export default {
 
 @media (max-width: 767px) {
   .right-card {
-    padding: 70px 53px 70px 53px;
+    padding: 50px 30px 10px 30px;
   }
 
   .paragraph-content {
@@ -124,6 +124,10 @@ export default {
 
   .flying-item {
     display: none;
+  }
+
+  .main-section {
+    margin-top: 10px;
   }
 }
 </style>
